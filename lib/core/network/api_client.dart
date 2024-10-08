@@ -1,16 +1,18 @@
 import 'package:dio/dio.dart';
+import 'package:food_app/utils/api_consts.dart';
 
 class ApiClient {
   final Dio _dio;
 
-  ApiClient(String baseUrl)
+  ApiClient()
       : _dio = Dio(BaseOptions(
-    baseUrl: baseUrl,
-    connectTimeout: const Duration(minutes: 5),
-    receiveTimeout: const Duration(minutes: 5),
-  ));
+          baseUrl: AppApiConstants.baseUrl,
+          connectTimeout: const Duration(minutes: 5),
+          receiveTimeout: const Duration(minutes: 5),
+        ));
 
-  Future<Response> get(String endpoint, {Map<String, dynamic>? queryParameters}) async {
+  Future<Response> get(String endpoint,
+      {Map<String, dynamic>? queryParameters}) async {
     try {
       return await _dio.get(endpoint, queryParameters: queryParameters);
     } on DioException catch (e) {

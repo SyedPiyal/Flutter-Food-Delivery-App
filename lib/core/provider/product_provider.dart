@@ -5,9 +5,8 @@ import '../dataModel/product/popular_product.dart';
 
 
 class PopularProductProvider with ChangeNotifier {
-  final PopularProductRepository _repository;
+  final PopularProductRepository _repository = PopularProductRepository();
 
-  PopularProductProvider(String baseUrl) : _repository = PopularProductRepository(baseUrl);
 
   bool _isLoading = false;
   String? _errorMessage;

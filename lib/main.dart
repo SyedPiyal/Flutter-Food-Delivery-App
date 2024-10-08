@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/core/provider/signup_provider.dart';
-import 'package:food_app/utils/api_consts.dart';
 import 'package:food_app/utils/constants.dart';
 import 'package:provider/provider.dart';
 import 'core/provider/login_provider.dart';
@@ -19,13 +18,13 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(
-          create: (context) => LoginProvider(AppApiConstants.baseUrl),
+          create: (context) => LoginProvider(),
         ),
         ChangeNotifierProvider(
-          create: (context) => SignUpProvider(AppApiConstants.baseUrl),
+          create: (context) => SignUpProvider(),
         ),
         ChangeNotifierProvider(
-          create: (context) => PopularProductProvider(AppApiConstants.baseUrl),
+          create: (context) => PopularProductProvider(),
         ),
       ],
       child: MaterialApp(

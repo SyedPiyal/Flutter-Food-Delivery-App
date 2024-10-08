@@ -4,9 +4,9 @@ import '../../dataModel/login/login_response.dart';
 import '../../network/api_client.dart';
 
 class LoginRepository {
-  final ApiClient _apiService;
+  final ApiClient _apiService = ApiClient();
 
-  LoginRepository(String baseUrl) : _apiService = ApiClient(baseUrl);
+
 
   Future<LoginResponse> login(LoginRequest loginRequest) async {
     try {

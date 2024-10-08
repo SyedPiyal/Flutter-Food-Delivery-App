@@ -7,9 +7,8 @@ import '../data/auth/login_repo.dart';
 import '../dataModel/login/login_req.dart';
 
 class SignUpProvider with ChangeNotifier {
-  final SignUpRepository _signUpRepository;
+  final SignUpRepository _signUpRepository= SignUpRepository();
 
-  SignUpProvider(String baseUrl) : _signUpRepository = SignUpRepository(baseUrl);
 
   bool _isLoading = false;
   String? _errorMessage;

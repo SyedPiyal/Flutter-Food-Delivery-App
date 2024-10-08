@@ -4,9 +4,9 @@ import '../data/auth/login_repo.dart';
 import '../dataModel/login/login_req.dart';
 
 class LoginProvider with ChangeNotifier {
-  final LoginRepository _loginRepository;
+  final LoginRepository _loginRepository = LoginRepository();
 
-  LoginProvider(String baseUrl) : _loginRepository = LoginRepository(baseUrl);
+
 
   bool _isLoading = false;
   String? _errorMessage;

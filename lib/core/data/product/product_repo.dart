@@ -1,13 +1,9 @@
-
-
 import '../../../utils/api_consts.dart';
 import '../../dataModel/product/popular_product.dart';
 import '../../network/api_client.dart';
 
 class PopularProductRepository {
-  final ApiClient _apiService;
-
-  PopularProductRepository(String baseUrl) : _apiService = ApiClient(baseUrl);
+  final ApiClient _apiService = ApiClient();
 
   Future<PopularProduct> fetchPopularProducts() async {
     try {

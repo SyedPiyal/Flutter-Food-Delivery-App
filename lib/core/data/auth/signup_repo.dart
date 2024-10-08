@@ -5,9 +5,9 @@ import '../../../utils/api_consts.dart';
 import '../../network/api_client.dart';
 
 class SignUpRepository {
-  final ApiClient _apiService;
+  final ApiClient _apiService = ApiClient();
 
-  SignUpRepository(String baseUrl) : _apiService = ApiClient(baseUrl);
+
 
   Future<SignupResponse> signUp(SignupRequest signupRequest) async {
     try {
