@@ -7,8 +7,6 @@ import '../../network/api_client.dart';
 class SignUpRepository {
   final ApiClient _apiService = ApiClient();
 
-
-
   Future<SignupResponse> signUp(SignupRequest signupRequest) async {
     try {
       final response = await _apiService.post(AppApiConstants.registerUrl,

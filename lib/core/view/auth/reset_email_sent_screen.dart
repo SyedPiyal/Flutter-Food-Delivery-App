@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../../common/welcome_text.dart';
 import '../../../utils/constants.dart';
 

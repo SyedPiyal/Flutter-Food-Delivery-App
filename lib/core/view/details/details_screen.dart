@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../../common/cards/iteam_card.dart';
 import '../../../utils/constants.dart';
 import '../../../utils/demoData.dart';

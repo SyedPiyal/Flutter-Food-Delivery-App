@@ -5,7 +5,7 @@ import 'package:food_app/core/view/auth/sign_in_screen.dart';
 import '../../../common/buttons/socal_button.dart';
 import '../../../common/welcome_text.dart';
 import '../../../utils/constants.dart';
-import '../signUp/widgets/sign_up_form.dart';
+import '../signUp/sign_up_form.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});

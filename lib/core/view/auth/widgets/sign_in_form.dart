@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/core/dataModel/login/login_response.dart';
 import 'package:food_app/core/view/auth/sign_up_screen.dart';
-import 'package:food_app/core/view/signUp/widgets/sign_up_form.dart';
+import 'package:food_app/core/view/signUp/sign_up_form.dart';
 import 'package:food_app/utils/entry_point.dart';
 import 'package:provider/provider.dart';
 import '../../../../utils/constants.dart';
@@ -30,7 +30,7 @@ class _SignInFormState extends State<SignInForm> {
 
   @override
   Widget build(BuildContext context) {
-    final loginProvider = Provider.of<LoginProvider>(context);
+    final loginProvider = Provider.of<AuthProvider>(context);
 
     return Form(
       key: _formKey,

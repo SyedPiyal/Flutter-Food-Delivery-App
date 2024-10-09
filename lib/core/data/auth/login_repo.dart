@@ -5,9 +5,7 @@ import '../../network/api_client.dart';
 
 class LoginRepository {
   final ApiClient _apiService = ApiClient();
-
-
-
+  
   Future<LoginResponse> login(LoginRequest loginRequest) async {
     try {
       final response = await _apiService.post(AppApiConstants.loginUrl,
