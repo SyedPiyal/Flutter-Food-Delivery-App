@@ -11,10 +11,7 @@ final List<String> demoRestaurantNames = [
 
 final Map<String, String> restaurantImages = {
   "ไก่ทอด หาดหย่าย สูตรเด็ด เจ้าดัง": "assets/images/ไก่ทอดซอสหัวหอม.png",
-  "บ้านไก่เกาหลี อร่อยกว่าบอนชอน": "assets/images/ลาบไก่ทอด.jpg",
   "ไก่ทอด ลุงพล ป้าแต๋น": "assets/images/ปีกไก่ทอด.jpg",
-  "ไก่ทอดร้านนี้ กินแล้วรวย สวยหล่อ": "assets/images/ข้าวเหนียวไก่ทอด.png",
-  "ควยหีแตด": "assets/images/ไก่ทอดหน้าโรงเรียน.jpg"
   // Add more restaurant names and images here as needed
 };
 
@@ -38,33 +35,12 @@ List<Map<String, dynamic>> demoMediumCardData = [
     "delivertTime": 20,
   },
   {
-    "name": "ไก่ทอด หาดหย่าย สูตรเด็ด เจ้าดัง",
-    "image": "assets/images/ไก่ทอดหาดใหญ่.png",
-    "location": "นานา, กรุงเทพ",
-    "rating": 9.1,
-    "delivertTime": 35,
-  },
-  {
     "name": "ไก่ทอด ลุงพล ป้าแต๋น",
     "image": "assets/images/ไก่ทอดซอสน้ำปลา.png",
     "location": "ชิดลม, กรุงเทพ",
     "rating": 7.3,
     "delivertTime": 25,
   },
-  {
-    "name": "ไก่ทอดร้านนี้ กินแล้วรวย สวยหล่อ",
-    "image": "assets/images/ข้าวหมกไก่ทอด.png",
-    "location": "ทองหล่อ, กรุงเทพ",
-    "rating": 8.4,
-    "delivertTime": 30,
-  },
-  {
-    "name": "ไก่ทอดข้างทาง อุุดหนุนป้าหน่อย",
-    "image": "assets/images/ปีกไก่ทอด.png",
-    "location": "มศว, กรุงเทพ",
-    "rating": 9.5,
-    "delivertTime": 15,
-  }
 ];
 
 final Map<String, List<Map<String, dynamic>>> restaurantMenu = {
