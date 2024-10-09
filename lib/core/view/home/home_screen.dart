@@ -104,6 +104,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         defaultPadding, 0, defaultPadding, defaultPadding),
                     child: RestaurantInfoBigCard(
                       // Use demoBigImages list
+                      // images: [restaurant["image"]],
                       images: [restaurant["image"]],
                       // Use demoRestaurantNames list for name
                       name: restaurant["name"],

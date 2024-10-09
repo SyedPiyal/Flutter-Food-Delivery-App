@@ -10,16 +10,15 @@ final List<String> demoRestaurantNames = [
 ];
 
 final Map<String, String> restaurantImages = {
-  "ไก่ทอด หาดหย่าย สูตรเด็ด เจ้าดัง": "assets/images/ไก่ทอดซอสหัวหอม.png",
-  "บ้านไก่เกาหลี อร่อยกว่าบอนชอน": "assets/images/ลาบไก่ทอด.jpg",
-  "ไก่ทอด ลุงพล ป้าแต๋น": "assets/images/ปีกไก่ทอด.jpg",
-  "ไก่ทอดร้านนี้ กินแล้วรวย สวยหล่อ": "assets/images/ข้าวเหนียวไก่ทอด.png",
-  "ควยหีแตด": "assets/images/ไก่ทอดหน้าโรงเรียน.jpg"
+  "ไก่ทอด หาดหย่าย สูตรเด็ด เจ้าดัง": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Hg1_hfC0rYeMUbNFM-rAQUEhh0gykPWz5p78KSJAR0LJeoUvC3Dywi0jVQ&s",
+  "บ้านไก่เกาหลี อร่อยกว่าบอนชอน": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Hg1_hfC0rYeMUbNFM-rAQUEhh0gykPWz5p78KSJAR0LJeoUvC3Dywi0jVQ&s",
+  "ไก่ทอด ลุงพล ป้าแต๋น": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Hg1_hfC0rYeMUbNFM-rAQUEhh0gykPWz5p78KSJAR0LJeoUvC3Dywi0jVQ&s",
+  "ไก่ทอดร้านนี้ กินแล้วรวย สวยหล่อ": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Hg1_hfC0rYeMUbNFM-rAQUEhh0gykPWz5p78KSJAR0LJeoUvC3Dywi0jVQ&s",
+  "ควยหีแตด": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Hg1_hfC0rYeMUbNFM-rAQUEhh0gykPWz5p78KSJAR0LJeoUvC3Dywi0jVQ&s"
   // Add more restaurant names and images here as needed
 };
 
 List<String> demoBigImages = [
-  "assets/images/ไก่ทอดซอสหัวหอม.png",
   "assets/images/ลาบไก่ทอด.jpg",
   "assets/images/ปีกไก่ทอด.jpg",
   "assets/images/ข้าวเหนียวไก่ทอด.png",
