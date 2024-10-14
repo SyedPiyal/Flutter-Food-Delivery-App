@@ -81,6 +81,8 @@ class _SignInFormState extends State<SignInForm> {
           if (loginProvider.errorMessage != null)
             Text(
               loginProvider.errorMessage!,
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
               style: const TextStyle(color: Colors.red),
             ),
 

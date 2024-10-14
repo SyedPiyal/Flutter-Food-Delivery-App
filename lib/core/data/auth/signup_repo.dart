@@ -1,19 +1,10 @@
 import 'package:food_app/core/dataModel/signup/signup_request.dart';
 import 'package:food_app/core/dataModel/signup/signup_response.dart';
-
-import '../../../utils/api_consts.dart';
 import '../../network/api_client.dart';
+import '../../service/service_locator.dart';
 
-class SignUpRepository {
-  final ApiClient _apiService = ApiClient();
+abstract class SignUpRepository {
+  final ApiClient apiService = di.get<ApiClient>();
 
-  Future<SignupResponse> signUp(SignupRequest signupRequest) async {
-    try {
-      final response = await _apiService.post(AppApiConstants.registerUrl,
-          data: signupRequest.toJson());
-      return SignupResponse.fromJson(response.data);
-    } catch (e) {
-      throw Exception('Login failed: $e');
-    }
-  }
+  Future<SignupResponse> signUp(SignupRequest signupRequest) ;
 }

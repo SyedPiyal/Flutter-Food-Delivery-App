@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/core/service/service_locator.dart';
 import 'package:food_app/utils/constants.dart';
 import 'package:provider/provider.dart';
 import 'core/provider/login_provider.dart';
@@ -6,6 +7,7 @@ import 'core/provider/food_provider.dart';
 import 'core/view/onboarding/onboarding_scrreen.dart';
 
 void main() {
+  dependencySetup();
   runApp(const MyApp());
 }
 

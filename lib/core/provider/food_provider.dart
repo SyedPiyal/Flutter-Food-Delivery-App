@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/core/dataModel/product/recommended_product.dart';
 
-import '../data/product/product_repo.dart';
+import '../data/product/food_repo.dart';
 import '../dataModel/product/popular_product.dart';
+import '../service/service_locator.dart';
 
 class FoodProvider with ChangeNotifier {
-  final FoodRepository _repository = FoodRepository();
+  final FoodRepository _repository = di.get<FoodRepository>();
 
   bool _isLoading = false;
   String? _errorMessage;

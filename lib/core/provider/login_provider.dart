@@ -5,10 +5,11 @@ import '../data/auth/signup_repo.dart';
 import '../dataModel/login/login_req.dart';
 import '../dataModel/signup/signup_request.dart';
 import '../dataModel/signup/signup_response.dart';
+import '../service/service_locator.dart';
 
 class AuthProvider with ChangeNotifier {
-  final LoginRepository _loginRepository = LoginRepository();
-  final SignUpRepository _signUpRepository= SignUpRepository();
+  final LoginRepository _loginRepository = di.get<LoginRepository>();
+  final SignUpRepository _signUpRepository = di.get<SignUpRepository>();
 
   bool _isLoading = false;
   String? _errorMessage;
@@ -40,7 +41,7 @@ class AuthProvider with ChangeNotifier {
 
     try {
       final SignupResponse signupResponse =
-      await _signUpRepository.signUp(signupRequest);
+          await _signUpRepository.signUp(signupRequest);
       _errorMessage = null; // Reset error message on success
       return signupResponse;
     } catch (e) {
