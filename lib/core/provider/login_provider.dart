@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/core/dataModel/login/login_response.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../data/auth/login_repo.dart';
 import '../data/auth/signup_repo.dart';
 import '../dataModel/login/login_req.dart';
@@ -26,6 +27,11 @@ class AuthProvider with ChangeNotifier {
       final LoginResponse loginResponse =
           await _loginRepository.login(loginRequest);
       _errorMessage = null; // Reset error message on success
+
+      // Save login status
+      final SharedPreferences prefs = await SharedPreferences.getInstance();
+      await prefs.setBool('isLoggedIn', true);
+
       return loginResponse;
     } catch (e) {
       _errorMessage = e.toString();
